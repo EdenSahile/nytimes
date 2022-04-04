@@ -34,6 +34,7 @@ handleSubmit=(e)=>{
   }
 
 
+
   query=()=>{
 
     let url = this.state.baseURL+"q="+this.state.input+'&api-key='+this.state.APIkey;
@@ -88,13 +89,6 @@ handleSubmit=(e)=>{
              submit={(e)=>this.handleSubmit(e)}/>
          </div>
         </div>
-
-        <div className='row'>
-        <div className='col-sm-6'>
-
-       </div>
-        </div>
-
         </div>
 
 
