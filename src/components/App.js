@@ -1,6 +1,7 @@
 import SearchBar from'./SearchBar'
 import '../styles/App.css';
 import React, { Component} from 'react'
+import NewList from './NewList';
 
 class App extends Component{
 
@@ -29,8 +30,13 @@ handleChange=(e)=>{
 
 handleSubmit=(e)=>{
     e.preventDefault()
-  
+
   this.query()
+
+  this.setState({
+     input:" "
+  })
+   
   }
 
 
@@ -67,9 +73,10 @@ handleSubmit=(e)=>{
         })
 
            this.setState({
-             results:results
+             results:results,
+           
            })
-           console.log(results)
+          //  console.log(results)
        })
 
 
@@ -83,30 +90,23 @@ handleSubmit=(e)=>{
       <div className='container'>
         <div className='row'>
           <div className='col-sm-12'>
-            <SearchBar 
+            <SearchBar
             results={this.state.results}
-            change={(e)=>this.handleChange(e)} 
+            change={(e)=>this.handleChange(e)}
              submit={(e)=>this.handleSubmit(e)}/>
          </div>
         </div>
+
+        <div className='row'>
+           <div className='col-sm-12'>
+             <NewList results= {this.state.results} />
+             </div>
+          </div>
         </div>
-
-
 )
-
-
-
   }
 
 }
 
 
-
-
-
-
-
-
-
-
-export default App;
+export default React.memo(App);

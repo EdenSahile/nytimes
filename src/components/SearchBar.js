@@ -1,15 +1,11 @@
 import React from'react'
-// import propTypes from'prop-types'
 import '../styles/style.css'
 
 
 
-
 const SearchBar=({
-    
     change,
     submit,
-    results
   
 })=>{
 
@@ -26,30 +22,21 @@ const SearchBar=({
                 <div className="col">
                     <input 
                     className="form-control form-control-lg form-control-borderless" type="search"
-                    placeholder="Search ..."
+                    placeholder="ex:Trump"
                    
                     onChange={change}/>
                 </div>
                 <div className="col-auto">
                     <button 
                     className="btn btn-lg btn-info"
-                     type="submit" 
-
-                     > Search </button>
+                     type="submit" > Search </button>
                 </div>
             </div>
         </form>
     </div>
 </nav>
 
-<ul>
-    {
-   results.map(result=>{
-        return(<li key={result.id}><a  href={result.link}  target="_blank" rel="noopener noreferrer" >{result.title}</a></li>)
-        })
-    }
 
-</ul>
 
 </React.Fragment>
 
@@ -59,14 +46,5 @@ const SearchBar=({
     
 
 }
-
-
-
-// SearchBar.propTypes={
-    
-//     changeDefault: propTypes.string,
-//     change:propTypes.func
-
-// }
 
 export default React.memo(SearchBar);
