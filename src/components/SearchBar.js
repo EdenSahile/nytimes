@@ -8,11 +8,13 @@ import '../styles/style.css'
 const SearchBar=({
     
     change,
-    submit
+    submit,
+    results
   
 })=>{
 
         return(
+            <React.Fragment>
 
          <nav className="navbar navbar-default navbar-fixed-top navbar-light">
     <div className="container margin-left" >
@@ -39,6 +41,20 @@ const SearchBar=({
         </form>
     </div>
 </nav>
+
+<ul>
+    {
+   results.map(result=>{
+        return(<li key={result.id}>{result.title}</li>)
+        })
+    }
+
+</ul>
+
+</React.Fragment>
+
+
+
         )
     
 
