@@ -45,7 +45,7 @@ const SearchBar=({
 <ul>
     {
    results.map(result=>{
-        return(<li key={result.id}>{result.title}</li>)
+        return(<li key={result.id}><a  href={result.link}  target="_blank" rel="noopener noreferrer" >{result.title}</a></li>)
         })
     }
 
