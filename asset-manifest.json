@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nytimes/static/css/main.d46c1e5b.css",
+    "main.js": "/nytimes/static/js/main.5bd5f2ad.js",
+    "static/js/787.cb897b78.chunk.js": "/nytimes/static/js/787.cb897b78.chunk.js",
+    "index.html": "/nytimes/index.html",
+    "main.d46c1e5b.css.map": "/nytimes/static/css/main.d46c1e5b.css.map",
+    "main.5bd5f2ad.js.map": "/nytimes/static/js/main.5bd5f2ad.js.map",
+    "787.cb897b78.chunk.js.map": "/nytimes/static/js/787.cb897b78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d46c1e5b.css",
+    "static/js/main.5bd5f2ad.js"
+  ]
+}
