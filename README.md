@@ -10,3 +10,5 @@ Utilisation d'une API (NYTIMES) pour afficher des sujets d'actualité après avo
 - API
 - states
 - props
+
+Consulter la page en ligne : https://edensahile.github.io/nytimes/
